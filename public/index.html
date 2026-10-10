@@ -4,43 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WaraBio-Surveillance | Pathogen Intelligence & Diagnostic Platform</title>
-  <!-- Tailwind CSS CDN for instant, robust responsive styling -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
     body { font-family: 'Inter', sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-rose-500 selection:text-white">
+<body class="bg-black text-white min-h-screen flex flex-col antialiased selection:bg-white selection:text-black">
 
   <!-- Top Navigation Bar -->
-  <header class="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+  <header class="border-b border-neutral-900 bg-black/90 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-500 to-amber-500 flex items-center justify-center text-white shadow-lg shadow-rose-500/20">
-          <i data-lucide="shield-alert" class="w-5 h-5"></i>
+        <div class="w-9 h-9 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white">
+          <i data-lucide="shield-alert" class="w-4 h-4 text-emerald-400"></i>
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-rose-400 via-amber-200 to-emerald-400 bg-clip-text text-transparent">WaraBio-Surveillance</span>
-            <span class="px-2 py-0.5 text-[10px] font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-full">v1.0 • UI Ibadan</span>
+            <span class="font-extrabold text-base tracking-tight text-white">WaraBio-Surveillance</span>
+            <span class="px-2 py-0.5 text-[10px] font-mono uppercase bg-neutral-900 text-neutral-400 border border-neutral-800 rounded">v1.0 • UI Ibadan</span>
           </div>
-          <p class="text-[11px] text-slate-400 font-medium">Ojoo Market Dairy Pathogen Intelligence & Diagnostics</p>
+          <p class="text-[11px] text-neutral-400">Ojoo Market Dairy Pathogen Intelligence & Diagnostics</p>
         </div>
       </div>
 
-      <nav class="flex items-center gap-2 text-sm font-medium">
-        <button id="nav-overview" onclick="switchTab('overview')" class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-white font-semibold transition flex items-center gap-1.5 border border-slate-700">
-          <i data-lucide="layout-dashboard" class="w-4 h-4 text-rose-400"></i> Surveillance
+      <nav class="flex items-center gap-2 text-xs font-medium">
+        <button id="nav-overview" onclick="switchTab('overview')" class="px-3 py-1.5 rounded-md bg-white text-black font-semibold transition flex items-center gap-1.5">
+          <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i> Surveillance
         </button>
-        <button id="nav-diagnostic" onclick="switchTab('diagnostic')" class="px-3.5 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition flex items-center gap-1.5">
-          <i data-lucide="microscope" class="w-4 h-4 text-amber-400"></i> Diagnostic Tool
+        <button id="nav-diagnostic" onclick="switchTab('diagnostic')" class="px-3 py-1.5 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-900 transition flex items-center gap-1.5 border border-transparent hover:border-neutral-800">
+          <i data-lucide="microscope" class="w-3.5 h-3.5 text-amber-400"></i> Diagnostic Tool
         </button>
-        <button id="nav-isolates" onclick="switchTab('isolates')" class="px-3.5 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition flex items-center gap-1.5">
-          <i data-lucide="database" class="w-4 h-4 text-emerald-400"></i> 40 Isolates Registry
+        <button id="nav-isolates" onclick="switchTab('isolates')" class="px-3 py-1.5 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-900 transition flex items-center gap-1.5 border border-transparent hover:border-neutral-800">
+          <i data-lucide="database" class="w-3.5 h-3.5 text-emerald-400"></i> 40 Isolates Registry
         </button>
       </nav>
     </div>
@@ -51,93 +51,91 @@
 
     <!-- TAB 1: SURVEILLANCE OVERVIEW -->
     <section id="tab-overview" class="space-y-6">
-      <!-- Hero Banner -->
-      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900 to-rose-950/40 border border-slate-800 p-6 sm:p-8">
-        <div class="max-w-3xl space-y-3">
-          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20">
-            <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
-            Surveillance Study: December 2024 • Dr. K. Banwo Lab
-          </div>
-          <h1 class="text-2xl sm:text-3xl font-black tracking-tight text-white">
-            Microbial Safety & Virulence Phenotypes of Unpasteurized <span class="text-rose-400">Wara Cheese</span>
-          </h1>
-          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Real-time public health analysis modeling 40 confirmed bacterial isolates from Ojoo Main Market, Ibadan. Evaluating the biological tension between indigenous probiotic Lactic Acid Bacteria (LAB) and high-virulence enteric contaminants.
-          </p>
+      <!-- Minimalist Pitch Header -->
+      <div class="rounded-xl bg-neutral-950 border border-neutral-800/80 p-6 sm:p-8 space-y-3">
+        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Dec 2024 Study • Dr. K. Banwo Lab • Department of Microbiology
         </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+          Microbial Safety & Virulence Phenotypes of Unpasteurized Wara Cheese
+        </h1>
+        <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed max-w-3xl">
+          Epidemiological bio-surveillance platform analyzing 40 confirmed bacterial isolates from Ojoo Main Market, Ibadan. Measuring phenotypic virulence, in vitro &beta;-hemolysis, and the equilibrium between indigenous probiotic Lactic Acid Bacteria (LAB) and foodborne enteric contaminants.
+        </p>
       </div>
 
       <!-- Macro Metrics Bar -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="stats-cards">
         <!-- Metric Card 1 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-2">
-          <div class="flex items-center justify-between text-slate-400">
-            <span class="text-xs font-medium uppercase tracking-wider">Total Isolates</span>
-            <i data-lucide="test-tubes" class="w-4 h-4 text-sky-400"></i>
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-5 space-y-1">
+          <div class="flex items-center justify-between text-neutral-400">
+            <span class="text-[11px] font-mono uppercase tracking-wider">Total Isolates</span>
+            <i data-lucide="test-tubes" class="w-4 h-4 text-neutral-500"></i>
           </div>
           <div class="text-3xl font-black text-white font-mono" id="stat-total">40</div>
-          <p class="text-xs text-slate-400">11 distinct species across 5 families</p>
+          <p class="text-[11px] text-neutral-400">11 distinct species cataloged</p>
         </div>
 
         <!-- Metric Card 2 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-2">
-          <div class="flex items-center justify-between text-slate-400">
-            <span class="text-xs font-medium uppercase tracking-wider">&beta;-Hemolytic Rate</span>
-            <i data-lucide="flame" class="w-4 h-4 text-rose-500"></i>
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-5 space-y-1">
+          <div class="flex items-center justify-between text-neutral-400">
+            <span class="text-[11px] font-mono uppercase tracking-wider">&beta;-Hemolytic Rate</span>
+            <i data-lucide="flame" class="w-4 h-4 text-rose-400"></i>
           </div>
-          <div class="text-3xl font-black text-rose-400 font-mono" id="stat-beta">52.5%</div>
-          <p class="text-xs text-rose-400/80">21 / 40 isolates lyse red blood cells</p>
+          <div class="text-3xl font-black text-white font-mono" id="stat-beta">52.5%</div>
+          <p class="text-[11px] text-rose-400">21 / 40 isolates lyse red blood cells</p>
         </div>
 
         <!-- Metric Card 3 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-2">
-          <div class="flex items-center justify-between text-slate-400">
-            <span class="text-xs font-medium uppercase tracking-wider">Mean Virulence Index</span>
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-5 space-y-1">
+          <div class="flex items-center justify-between text-neutral-400">
+            <span class="text-[11px] font-mono uppercase tracking-wider">Mean Virulence Index</span>
             <i data-lucide="activity" class="w-4 h-4 text-amber-400"></i>
           </div>
-          <div class="text-3xl font-black text-amber-300 font-mono" id="stat-virulence">49.9<span class="text-base text-slate-500 font-normal"> / 100</span></div>
-          <p class="text-xs text-slate-400">Computed via &beta;-hemolysis, DNase & gelatinase</p>
+          <div class="text-3xl font-black text-white font-mono" id="stat-virulence">49.9<span class="text-sm text-neutral-400 font-normal"> / 100</span></div>
+          <p class="text-[11px] text-neutral-400">Computed via hemolysis, DNase & gelatinase</p>
         </div>
 
         <!-- Metric Card 4 -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-2">
-          <div class="flex items-center justify-between text-slate-400">
-            <span class="text-xs font-medium uppercase tracking-wider">Probiotic LAB Fraction</span>
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-5 space-y-1">
+          <div class="flex items-center justify-between text-neutral-400">
+            <span class="text-[11px] font-mono uppercase tracking-wider">Probiotic LAB Fraction</span>
             <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
           </div>
-          <div class="text-3xl font-black text-emerald-400 font-mono" id="stat-lab">40.0%</div>
-          <p class="text-xs text-emerald-400/80">16 / 40 isolates beneficial fermenters</p>
+          <div class="text-3xl font-black text-white font-mono" id="stat-lab">40.0%</div>
+          <p class="text-[11px] text-emerald-400">16 / 40 isolates beneficial fermenters</p>
         </div>
       </div>
 
       <!-- Surveillance Visual Breakdowns -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- Microbial Group Chart -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 space-y-4">
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-6 space-y-4">
           <div class="flex items-center justify-between">
-            <h3 class="text-base font-bold text-white flex items-center gap-2">
-              <i data-lucide="pie-chart" class="w-4 h-4 text-indigo-400"></i> Microbial Group Distribution
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="pie-chart" class="w-4 h-4 text-neutral-400"></i> Microbial Group Distribution
             </h3>
-            <span class="text-xs text-slate-400">40 Isolates</span>
+            <span class="text-xs font-mono text-neutral-400">40 Isolates</span>
           </div>
-          <div class="space-y-3" id="group-distribution-bars">
+          <div class="space-y-3 pt-1" id="group-distribution-bars">
             <!-- Rendered dynamically -->
           </div>
         </div>
 
         <!-- Virulence Risk Tier Breakdown -->
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 space-y-4">
+        <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-6 space-y-4">
           <div class="flex items-center justify-between">
-            <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
               <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-400"></i> Pathogenicity Risk Tier Distribution
             </h3>
-            <span class="text-xs text-slate-400">Virulence Index (0-100)</span>
+            <span class="text-xs font-mono text-neutral-400">Virulence Index (0-100)</span>
           </div>
           <div class="grid grid-cols-2 gap-3" id="risk-tier-boxes">
             <!-- Rendered dynamically -->
           </div>
-          <div class="p-3.5 rounded-lg bg-slate-950/60 border border-slate-800/80 text-xs text-slate-400 leading-relaxed">
-            <strong class="text-slate-200">Public Health Interpretation:</strong> While 42.5% of isolates represent beneficial starter/fermenting Lactic Acid Bacteria, 57.5% pose opportunistic or direct food poisoning hazards (<em class="text-rose-400">E. coli</em>, <em class="text-rose-400">Salmonella spp.</em>, <em class="text-rose-400">B. cereus</em>, <em class="text-rose-400">S. aureus</em>), pointing directly to unhygienic raw milk extraction and open-market handling.
+          <div class="p-3.5 rounded-lg bg-black border border-neutral-800 text-xs text-neutral-400 leading-relaxed">
+            <strong class="text-white">Public Health Implication:</strong> While 42.5% of isolates represent beneficial starter Lactic Acid Bacteria, 57.5% pose opportunistic or direct food poisoning hazards (<span class="text-white">E. coli, Salmonella spp., B. cereus, S. aureus</span>), signaling unpasteurized raw milk handling and ambient temperature retail exposure.
           </div>
         </div>
       </div>
@@ -145,32 +143,32 @@
 
     <!-- TAB 2: INTERACTIVE DIAGNOSTIC TOOL -->
     <section id="tab-diagnostic" class="hidden space-y-6">
-      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+      <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-6 sm:p-8 space-y-6">
         <div>
-          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-2">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-neutral-900 border border-neutral-800 text-xs font-mono text-amber-400 mb-2">
             <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
             Diagnostic Decision Tree Engine
           </div>
-          <h2 class="text-2xl font-black text-white">Automated Bacterial Identification & Virulence Predictor</h2>
-          <p class="text-slate-400 text-sm">Select observed morphological, biochemical, and sugar reactions from your bench tests. The algorithm will classify the isolate and calculate pathogenic risk.</p>
+          <h2 class="text-xl sm:text-2xl font-black text-white">Automated Bacterial Identification & Virulence Predictor</h2>
+          <p class="text-neutral-400 text-xs sm:text-sm">Select observed morphological, biochemical, and sugar reactions from your bench tests. The algorithm will classify the isolate and calculate pathogenic risk.</p>
         </div>
 
         <!-- Preset Diagnostic Buttons -->
-        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-800">
-          <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Try Bench Presets:</span>
-          <button onclick="applyPreset('ecoli')" class="px-3 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-xs font-medium text-emerald-400 border border-slate-700 transition">
+        <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-neutral-800">
+          <span class="text-xs font-mono uppercase text-neutral-400 mr-2">Bench Presets:</span>
+          <button onclick="applyPreset('ecoli')" class="px-2.5 py-1 rounded bg-neutral-900 hover:bg-neutral-800 text-xs font-medium text-white border border-neutral-700 transition">
             E. coli (EMB Metallic Sheen)
           </button>
-          <button onclick="applyPreset('saureus')" class="px-3 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-xs font-medium text-amber-400 border border-slate-700 transition">
+          <button onclick="applyPreset('saureus')" class="px-2.5 py-1 rounded bg-neutral-900 hover:bg-neutral-800 text-xs font-medium text-white border border-neutral-700 transition">
             S. aureus (Catalase+, Mannitol+)
           </button>
-          <button onclick="applyPreset('bcereus')" class="px-3 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-xs font-medium text-rose-400 border border-slate-700 transition">
+          <button onclick="applyPreset('bcereus')" class="px-2.5 py-1 rounded bg-neutral-900 hover:bg-neutral-800 text-xs font-medium text-white border border-neutral-700 transition">
             B. cereus (Beta-Hemolytic Rod)
           </button>
-          <button onclick="applyPreset('lplantarum')" class="px-3 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-xs font-medium text-sky-400 border border-slate-700 transition">
+          <button onclick="applyPreset('lplantarum')" class="px-2.5 py-1 rounded bg-neutral-900 hover:bg-neutral-800 text-xs font-medium text-white border border-neutral-700 transition">
             L. plantarum (Catalase- LAB)
           </button>
-          <button onclick="resetDiagnosticForm()" class="px-3 py-1 rounded-md bg-slate-800 hover:bg-slate-750 text-xs font-medium text-slate-400 transition ml-auto">
+          <button onclick="resetDiagnosticForm()" class="px-2.5 py-1 rounded bg-neutral-900 hover:bg-neutral-800 text-xs font-medium text-neutral-400 transition ml-auto">
             Reset All
           </button>
         </div>
@@ -178,32 +176,32 @@
         <!-- Diagnostic Inputs Form -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
           <!-- Col 1: Morphology & Primary Stains -->
-          <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800 space-y-4">
-            <h4 class="text-sm font-bold text-white flex items-center gap-2">
-              <i data-lucide="eye" class="w-4 h-4 text-sky-400"></i> 1. Morphology & Stain
+          <div class="bg-black p-5 rounded-lg border border-neutral-800 space-y-4">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2">
+              <i data-lucide="eye" class="w-3.5 h-3.5 text-neutral-400"></i> 1. Morphology & Stain
             </h4>
             <div class="space-y-3 text-xs">
               <div>
-                <label class="block text-slate-400 mb-1">Gram Reaction</label>
-                <select id="diag-gram" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-white font-medium focus:ring-1 focus:ring-rose-500">
+                <label class="block text-neutral-400 mb-1">Gram Reaction</label>
+                <select id="diag-gram" class="w-full bg-neutral-900 border border-neutral-700 rounded px-3 py-2 text-white font-medium focus:outline-none focus:border-white">
                   <option value="GRAM_POSITIVE">Gram Positive (+)</option>
                   <option value="GRAM_NEGATIVE">Gram Negative (-)</option>
                 </select>
               </div>
               <div>
-                <label class="block text-slate-400 mb-1">Cellular Shape</label>
-                <select id="diag-shape" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-white font-medium focus:ring-1 focus:ring-rose-500">
+                <label class="block text-neutral-400 mb-1">Cellular Shape</label>
+                <select id="diag-shape" class="w-full bg-neutral-900 border border-neutral-700 rounded px-3 py-2 text-white font-medium focus:outline-none focus:border-white">
                   <option value="ROD">Bacilli / Rod</option>
                   <option value="COCCI">Cocci / Spherical</option>
                 </select>
               </div>
-              <div class="pt-2 space-y-2 border-t border-slate-800/80">
-                <label class="flex items-center gap-2 text-slate-300 cursor-pointer">
-                  <input type="checkbox" id="diag-emb" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+              <div class="pt-2 space-y-2 border-t border-neutral-900">
+                <label class="flex items-center gap-2 text-neutral-300 cursor-pointer">
+                  <input type="checkbox" id="diag-emb" class="rounded bg-neutral-900 border-neutral-700 text-white focus:ring-0">
                   <span>Green metallic sheen on EMB agar</span>
                 </label>
-                <label class="flex items-center gap-2 text-slate-300 cursor-pointer">
-                  <input type="checkbox" id="diag-swarming" class="rounded bg-slate-900 border-slate-700 text-indigo-500 focus:ring-0">
+                <label class="flex items-center gap-2 text-neutral-300 cursor-pointer">
+                  <input type="checkbox" id="diag-swarming" class="rounded bg-neutral-900 border-neutral-700 text-white focus:ring-0">
                   <span>Swarming motility on agar plate</span>
                 </label>
               </div>
@@ -211,46 +209,46 @@
           </div>
 
           <!-- Col 2: IMViC & Primary Biochemical Tests -->
-          <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800 space-y-4">
-            <h4 class="text-sm font-bold text-white flex items-center gap-2">
-              <i data-lucide="flask-conical" class="w-4 h-4 text-amber-400"></i> 2. Biochemical Tests
+          <div class="bg-black p-5 rounded-lg border border-neutral-800 space-y-4">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2">
+              <i data-lucide="flask-conical" class="w-3.5 h-3.5 text-neutral-400"></i> 2. Biochemical Tests
             </h4>
             <div class="grid grid-cols-2 gap-2 text-xs">
-              <label class="flex items-center gap-2 p-2 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-catalase" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+              <label class="flex items-center gap-2 p-2 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-catalase" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Catalase (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-2 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-oxidase" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+              <label class="flex items-center gap-2 p-2 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-oxidase" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Oxidase (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-2 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-indole" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+              <label class="flex items-center gap-2 p-2 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-indole" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Indole (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-2 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-citrate" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+              <label class="flex items-center gap-2 p-2 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-citrate" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Citrate (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-2 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-mr" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+              <label class="flex items-center gap-2 p-2 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-mr" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Methyl Red (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-2 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-vp" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+              <label class="flex items-center gap-2 p-2 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-vp" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Voges-Proskauer (+)</span>
               </label>
             </div>
             <!-- Virulence assays -->
-            <div class="pt-2 border-t border-slate-800/80 space-y-2 text-xs">
-              <span class="block font-semibold text-slate-400">Virulence Assays:</span>
+            <div class="pt-2 border-t border-neutral-900 space-y-2 text-xs">
+              <span class="block font-mono text-[11px] text-neutral-400 uppercase">Virulence Assays:</span>
               <div class="grid grid-cols-2 gap-2">
-                <label class="flex items-center gap-2 text-slate-300 cursor-pointer">
-                  <input type="checkbox" id="diag-gelatinase" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+                <label class="flex items-center gap-2 text-neutral-300 cursor-pointer">
+                  <input type="checkbox" id="diag-gelatinase" class="rounded bg-neutral-900 border-neutral-700 text-white">
                   <span>Gelatinase (+)</span>
                 </label>
-                <label class="flex items-center gap-2 text-slate-300 cursor-pointer">
-                  <input type="checkbox" id="diag-dnase" class="rounded bg-slate-800 border-slate-700 text-rose-500">
+                <label class="flex items-center gap-2 text-neutral-300 cursor-pointer">
+                  <input type="checkbox" id="diag-dnase" class="rounded bg-neutral-900 border-neutral-700 text-white">
                   <span>DNase (+)</span>
                 </label>
               </div>
@@ -258,42 +256,42 @@
           </div>
 
           <!-- Col 3: Carbohydrate Fermentation -->
-          <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800 space-y-4">
-            <h4 class="text-sm font-bold text-white flex items-center gap-2">
-              <i data-lucide="wheat" class="w-4 h-4 text-emerald-400"></i> 3. Sugar Fermentation
+          <div class="bg-black p-5 rounded-lg border border-neutral-800 space-y-4">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2">
+              <i data-lucide="wheat" class="w-3.5 h-3.5 text-neutral-400"></i> 3. Sugar Fermentation
             </h4>
             <div class="grid grid-cols-2 gap-2 text-xs">
-              <label class="flex items-center gap-2 p-1.5 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-glucose" checked class="rounded bg-slate-800 border-slate-700 text-emerald-500">
+              <label class="flex items-center gap-2 p-1.5 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-glucose" checked class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Glucose (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-1.5 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-lactose" class="rounded bg-slate-800 border-slate-700 text-emerald-500">
+              <label class="flex items-center gap-2 p-1.5 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-lactose" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Lactose (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-1.5 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-maltose" class="rounded bg-slate-800 border-slate-700 text-emerald-500">
+              <label class="flex items-center gap-2 p-1.5 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-maltose" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Maltose (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-1.5 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-sucrose" class="rounded bg-slate-800 border-slate-700 text-emerald-500">
+              <label class="flex items-center gap-2 p-1.5 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-sucrose" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Sucrose (+)</span>
               </label>
-              <label class="flex items-center gap-2 p-1.5 rounded bg-slate-900/60 border border-slate-800 text-slate-300 cursor-pointer hover:border-slate-700">
-                <input type="checkbox" id="diag-mannitol" class="rounded bg-slate-800 border-slate-700 text-emerald-500">
+              <label class="flex items-center gap-2 p-1.5 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-300 cursor-pointer hover:border-neutral-700">
+                <input type="checkbox" id="diag-mannitol" class="rounded bg-neutral-900 border-neutral-700 text-white">
                 <span>Mannitol (+)</span>
               </label>
             </div>
             <div class="pt-2">
-              <button onclick="runDiagnostics()" class="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-500 hover:to-amber-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-rose-600/20 transition flex items-center justify-center gap-2">
-                <i data-lucide="play" class="w-4 h-4"></i> Run Diagnostic Engine
+              <button onclick="runDiagnostics()" class="w-full py-2.5 px-4 rounded bg-white hover:bg-neutral-200 text-black font-extrabold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2">
+                <i data-lucide="play" class="w-3.5 h-3.5"></i> Run Diagnostic Engine
               </button>
             </div>
           </div>
         </div>
 
         <!-- Real-Time Diagnostic Results Display -->
-        <div id="diagnostic-results" class="pt-4 border-t border-slate-800 space-y-4">
+        <div id="diagnostic-results" class="pt-4 border-t border-neutral-800 space-y-4">
           <!-- Populated dynamically via JS -->
         </div>
       </div>
@@ -301,19 +299,19 @@
 
     <!-- TAB 3: COMPLETE 40 ISOLATES REGISTRY TABLE -->
     <section id="tab-isolates" class="hidden space-y-6">
-      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 space-y-6">
+      <div class="bg-neutral-950 border border-neutral-800 rounded-xl p-6 space-y-6">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h2 class="text-xl font-bold text-white flex items-center gap-2">
-              <i data-lucide="table" class="w-5 h-5 text-emerald-400"></i> Pure Culture Isolates Registry
+            <h2 class="text-lg font-bold text-white flex items-center gap-2 uppercase tracking-wide">
+              <i data-lucide="table" class="w-4 h-4 text-neutral-400"></i> Pure Culture Isolates Registry
             </h2>
-            <p class="text-slate-400 text-xs">All 40 bacterial strains recovered from Ojoo Market Wara cheese samples.</p>
+            <p class="text-neutral-400 text-xs">All 40 bacterial strains recovered from Ojoo Market Wara cheese samples.</p>
           </div>
 
           <!-- Table Search and Filters -->
           <div class="flex flex-wrap items-center gap-2">
-            <input type="text" id="filter-search" oninput="filterIsolatesTable()" placeholder="Search code, species..." class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white placeholder-slate-500 focus:ring-1 focus:ring-emerald-500">
-            <select id="filter-group" onchange="filterIsolatesTable()" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white">
+            <input type="text" id="filter-search" oninput="filterIsolatesTable()" placeholder="Search code, species..." class="bg-black border border-neutral-800 rounded px-3 py-1.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-white">
+            <select id="filter-group" onchange="filterIsolatesTable()" class="bg-black border border-neutral-800 rounded px-3 py-1.5 text-xs text-white focus:outline-none focus:border-white">
               <option value="">All Groups</option>
               <option value="Lactic Acid Bacteria">Lactic Acid Bacteria</option>
               <option value="Enterobacteriaceae">Enterobacteriaceae</option>
@@ -321,7 +319,7 @@
               <option value="Staphylococci">Staphylococci</option>
               <option value="Non-Fermenting">Non-Fermenting</option>
             </select>
-            <select id="filter-hemolysis" onchange="filterIsolatesTable()" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white">
+            <select id="filter-hemolysis" onchange="filterIsolatesTable()" class="bg-black border border-neutral-800 rounded px-3 py-1.5 text-xs text-white focus:outline-none focus:border-white">
               <option value="">All Hemolysis</option>
               <option value="BETA">Beta (&beta;) Hemolytic</option>
               <option value="ALPHA">Alpha (&alpha;) Hemolytic</option>
@@ -331,9 +329,9 @@
         </div>
 
         <!-- Table Container -->
-        <div class="overflow-x-auto rounded-xl border border-slate-800">
-          <table class="w-full text-left text-xs text-slate-300">
-            <thead class="bg-slate-950 text-slate-400 font-semibold uppercase tracking-wider border-b border-slate-800">
+        <div class="overflow-x-auto rounded-lg border border-neutral-800">
+          <table class="w-full text-left text-xs text-neutral-300">
+            <thead class="bg-black text-neutral-400 font-mono text-[11px] uppercase tracking-wider border-b border-neutral-800">
               <tr>
                 <th class="px-4 py-3">Code</th>
                 <th class="px-4 py-3">Organism & Taxon</th>
@@ -344,7 +342,7 @@
                 <th class="px-4 py-3 text-right">Virulence Score</th>
               </tr>
             </thead>
-            <tbody id="isolates-table-body" class="divide-y divide-slate-800/60 font-mono">
+            <tbody id="isolates-table-body" class="divide-y divide-neutral-900 font-mono">
               <!-- Rendered via JavaScript -->
             </tbody>
           </table>
@@ -355,10 +353,10 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-900 bg-slate-950/80 py-6 text-center text-xs text-slate-500">
+  <footer class="border-t border-neutral-900 bg-black py-6 text-center text-xs text-neutral-400">
     <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-      <p>Research Lead: <strong class="text-slate-300">Udochukwu Michael Odoemenam</strong> (UI Matric: 222735) • Supervisor: <strong class="text-slate-300">Dr. K. Banwo</strong></p>
-      <p class="font-mono text-[11px] text-slate-600">Built with Node.js, Prisma ORM, Tailwind CSS & JavaScript</p>
+      <p>Research Lead: <strong class="text-white">Udochukwu Michael Odoemenam</strong> (UI Matric: 222735) • Supervisor: <strong class="text-white">Dr. K. Banwo</strong></p>
+      <p class="font-mono text-[11px] text-neutral-400">Built with Node.js, Prisma ORM, Tailwind CSS & JavaScript</p>
     </div>
   </footer>
 
@@ -373,12 +371,10 @@
         const nav = document.getElementById(`nav-${t}`);
         if (t === tab) {
           section.classList.remove('hidden');
-          nav.classList.add('bg-slate-800', 'text-white', 'border', 'border-slate-700');
-          nav.classList.remove('text-slate-400');
+          nav.className = "px-3 py-1.5 rounded-md bg-white text-black font-semibold transition flex items-center gap-1.5";
         } else {
           section.classList.add('hidden');
-          nav.classList.remove('bg-slate-800', 'text-white', 'border', 'border-slate-700');
-          nav.classList.add('text-slate-400');
+          nav.className = "px-3 py-1.5 rounded-md text-neutral-400 hover:text-white hover:bg-neutral-900 transition flex items-center gap-1.5 border border-transparent hover:border-neutral-800";
         }
       });
       lucide.createIcons();
@@ -409,7 +405,7 @@
     function renderSummary(summary) {
       document.getElementById('stat-total').innerText = summary.totalIsolates;
       document.getElementById('stat-beta').innerText = `${summary.virulenceFactors.betaHemolysis.percentage}%`;
-      document.getElementById('stat-virulence').innerHTML = `${summary.meanVirulenceIndex}<span class="text-base text-slate-500 font-normal"> / 100</span>`;
+      document.getElementById('stat-virulence').innerHTML = `${summary.meanVirulenceIndex}<span class="text-sm text-neutral-400 font-normal"> / 100</span>`;
       
       const labCount = summary.groupDistribution['Lactic Acid Bacteria (LAB)'] || 0;
       document.getElementById('stat-lab').innerText = `${((labCount / summary.totalIsolates) * 100).toFixed(1)}%`;
@@ -421,12 +417,12 @@
         const pct = ((count / summary.totalIsolates) * 100).toFixed(1);
         groupContainer.innerHTML += `
           <div>
-            <div class="flex justify-between text-xs mb-1 font-medium">
-              <span class="text-slate-300">${group}</span>
-              <span class="text-slate-400 font-mono">${count} (${pct}%)</span>
+            <div class="flex justify-between text-xs mb-1 font-mono">
+              <span class="text-neutral-300">${group}</span>
+              <span class="text-neutral-400">${count} (${pct}%)</span>
             </div>
-            <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
-              <div class="h-full bg-indigo-500 rounded-full" style="width: ${pct}%"></div>
+            <div class="w-full h-1.5 bg-neutral-900 rounded-full overflow-hidden border border-neutral-800">
+              <div class="h-full bg-white rounded-full" style="width: ${pct}%"></div>
             </div>
           </div>
         `;
@@ -434,19 +430,19 @@
 
       // Risk Tiers Boxes
       const tierContainer = document.getElementById('risk-tier-boxes');
-      const tierColors = {
-        CRITICAL_VIRULENCE: { bg: 'bg-rose-500/10', border: 'border-rose-500/30', text: 'text-rose-400', label: 'Critical Virulence (&ge;75)' },
-        HIGH_VIRULENCE: { bg: 'bg-amber-500/10', border: 'border-amber-500/30', text: 'text-amber-400', label: 'High Virulence (&ge;50)' },
-        MODERATE_VIRULENCE: { bg: 'bg-sky-500/10', border: 'border-sky-500/30', text: 'text-sky-400', label: 'Moderate Virulence (20-49)' },
-        NEGLIGIBLE_VIRULENCE: { bg: 'bg-emerald-500/10', border: 'border-emerald-500/30', text: 'text-emerald-400', label: 'Probiotic / Benign (<20)' },
+      const tierLabels = {
+        CRITICAL_VIRULENCE: { label: 'Critical Virulence (&ge;75)', text: 'text-rose-400', border: 'border-neutral-800' },
+        HIGH_VIRULENCE: { label: 'High Virulence (&ge;50)', text: 'text-amber-400', border: 'border-neutral-800' },
+        MODERATE_VIRULENCE: { label: 'Moderate Virulence (20-49)', text: 'text-neutral-300', border: 'border-neutral-800' },
+        NEGLIGIBLE_VIRULENCE: { label: 'Probiotic / Benign (<20)', text: 'text-emerald-400', border: 'border-neutral-800' },
       };
 
       tierContainer.innerHTML = '';
       for (const [tier, count] of Object.entries(summary.tierDistribution)) {
-        const conf = tierColors[tier] || { bg: 'bg-slate-800', border: 'border-slate-700', text: 'text-slate-300', label: tier };
+        const conf = tierLabels[tier] || { label: tier, text: 'text-white', border: 'border-neutral-800' };
         tierContainer.innerHTML += `
-          <div class="p-3 rounded-lg border ${conf.bg} ${conf.border}">
-            <span class="text-[10px] uppercase font-bold tracking-wider block ${conf.text}">${conf.label}</span>
+          <div class="p-3.5 rounded-lg bg-black border ${conf.border}">
+            <span class="text-[10px] font-mono uppercase tracking-wider block ${conf.text}">${conf.label}</span>
             <span class="text-xl font-bold font-mono text-white">${count} isolates</span>
           </div>
         `;
@@ -462,33 +458,33 @@
         const v = iso.virulence;
         const t = iso.taxon || {};
         
-        let hemBadge = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-400 border border-slate-700">Gamma (&gamma;)</span>`;
+        let hemBadge = `<span class="px-2 py-0.5 rounded text-[10px] font-mono font-medium bg-neutral-900 text-neutral-400 border border-neutral-800">&gamma;-Gamma</span>`;
         if (v.hemolysis === 'BETA') {
-          hemBadge = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30">&beta;-Lytic</span>`;
+          hemBadge = `<span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-neutral-900 text-rose-400 border border-rose-900/50">&beta;-Lytic</span>`;
         } else if (v.hemolysis === 'ALPHA') {
-          hemBadge = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">&alpha;-Partial</span>`;
+          hemBadge = `<span class="px-2 py-0.5 rounded text-[10px] font-mono font-medium bg-neutral-900 text-amber-400 border border-amber-900/50">&alpha;-Partial</span>`;
         }
 
-        let riskBadgeColor = 'text-slate-400';
+        let riskBadgeColor = 'text-neutral-400';
         if (v.virulenceScore >= 75) riskBadgeColor = 'text-rose-400 font-bold';
         else if (v.virulenceScore >= 50) riskBadgeColor = 'text-amber-400 font-semibold';
         else if (v.virulenceScore === 0) riskBadgeColor = 'text-emerald-400 font-medium';
 
         let traitPills = [];
-        if (iso.morphology.greenMetallicSheenEMB) traitPills.push('<span class="text-[10px] text-emerald-400 font-sans">EMB Sheen</span>');
-        if (iso.biochemical.catalase) traitPills.push('<span class="text-[10px] text-slate-400 font-sans">Cat+</span>');
-        if (iso.biochemical.oxidase) traitPills.push('<span class="text-[10px] text-slate-400 font-sans">Oxi+</span>');
-        if (v.gelatinase) traitPills.push('<span class="text-[10px] text-rose-400 font-sans">Gel+</span>');
-        if (v.dnase) traitPills.push('<span class="text-[10px] text-rose-400 font-sans">DNase+</span>');
+        if (iso.morphology.greenMetallicSheenEMB) traitPills.push('<span class="text-[10px] text-emerald-400">EMB Sheen</span>');
+        if (iso.biochemical.catalase) traitPills.push('<span class="text-[10px] text-neutral-400">Cat+</span>');
+        if (iso.biochemical.oxidase) traitPills.push('<span class="text-[10px] text-neutral-400">Oxi+</span>');
+        if (v.gelatinase) traitPills.push('<span class="text-[10px] text-neutral-400">Gel+</span>');
+        if (v.dnase) traitPills.push('<span class="text-[10px] text-neutral-400">DNase+</span>');
 
         tbody.innerHTML += `
-          <tr class="hover:bg-slate-900/60 transition">
+          <tr class="hover:bg-neutral-900/50 transition">
             <td class="px-4 py-3 font-bold text-white">${iso.isolateCode}</td>
             <td class="px-4 py-3">
-              <span class="italic font-serif text-slate-200 text-sm font-medium">${t.scientificName || 'Unknown'}</span>
+              <span class="italic font-serif text-white text-xs">${t.scientificName || 'Unknown'}</span>
             </td>
-            <td class="px-4 py-3 font-sans text-slate-400">${t.microbialGroup || '-'}</td>
-            <td class="px-4 py-3 text-slate-400">${iso.gramStain === 'GRAM_POSITIVE' ? 'Gram+' : 'Gram-'} ${iso.cellularShape}</td>
+            <td class="px-4 py-3 font-sans text-neutral-400 text-[11px]">${t.microbialGroup || '-'}</td>
+            <td class="px-4 py-3 text-neutral-400 text-[11px]">${iso.gramStain === 'GRAM_POSITIVE' ? 'Gram+' : 'Gram-'} ${iso.cellularShape}</td>
             <td class="px-4 py-3">${traitPills.join(' • ') || '-'}</td>
             <td class="px-4 py-3 text-center">${hemBadge}</td>
             <td class="px-4 py-3 text-right ${riskBadgeColor}">${v.virulenceScore} / 100</td>
@@ -544,7 +540,7 @@
       } else if (preset === 'lplantarum') {
         document.getElementById('diag-gram').value = 'GRAM_POSITIVE';
         document.getElementById('diag-shape').value = 'ROD';
-        document.getElementById('diag-catalase').checked = false; // Negative is crucial
+        document.getElementById('diag-catalase').checked = false; // Catalase-negative is LAB hallmark
         document.getElementById('diag-oxidase').checked = false;
         document.getElementById('diag-lactose').checked = true;
         document.getElementById('diag-glucose').checked = true;
@@ -595,43 +591,43 @@
       const top = data.topMatch;
 
       if (!top) {
-        container.innerHTML = `<p class="text-xs text-slate-500">No conclusive matches found for provided inputs.</p>`;
+        container.innerHTML = `<p class="text-xs text-neutral-500 font-mono">No conclusive matches found for provided inputs.</p>`;
         return;
       }
 
-      let riskColor = 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20';
-      if (top.riskClassification === 'POTENTIAL_PATHOGEN') riskColor = 'text-rose-400 bg-rose-500/10 border-rose-500/20';
-      else if (top.riskClassification === 'OPPORTUNISTIC_PATHOGEN') riskColor = 'text-amber-400 bg-amber-500/10 border-amber-500/20';
+      let riskColor = 'text-emerald-400 border-neutral-800 bg-neutral-900';
+      if (top.riskClassification === 'POTENTIAL_PATHOGEN') riskColor = 'text-rose-400 border-neutral-800 bg-neutral-900';
+      else if (top.riskClassification === 'OPPORTUNISTIC_PATHOGEN') riskColor = 'text-amber-400 border-neutral-800 bg-neutral-900';
 
       let rankingsHtml = data.candidateRankings.map((c, i) => `
-        <div class="flex items-center justify-between text-xs py-1.5 border-b border-slate-800/80">
+        <div class="flex items-center justify-between text-xs py-2 border-b border-neutral-900 font-mono">
           <div class="flex items-center gap-2">
-            <span class="font-mono text-slate-500">${i + 1}.</span>
-            <span class="italic font-serif text-slate-200">${c.scientificName}</span>
-            <span class="text-[10px] text-slate-500 font-sans">(${c.microbialGroup})</span>
+            <span class="text-neutral-500">${i + 1}.</span>
+            <span class="italic font-serif text-white">${c.scientificName}</span>
+            <span class="text-[10px] text-neutral-500 font-sans">(${c.microbialGroup})</span>
           </div>
-          <span class="font-mono font-bold ${c.confidencePercentage >= 80 ? 'text-emerald-400' : 'text-slate-400'}">${c.confidencePercentage}% Match</span>
+          <span class="font-bold ${c.confidencePercentage >= 80 ? 'text-white' : 'text-neutral-500'}">${c.confidencePercentage}% Match</span>
         </div>
       `).join('');
 
       container.innerHTML = `
-        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 space-y-4">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div class="p-6 rounded-lg bg-black border border-neutral-800 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">Top Diagnostic Prediction</span>
+              <span class="text-[10px] font-mono uppercase tracking-wider text-neutral-500 block">Top Diagnostic Prediction</span>
               <h3 class="text-2xl font-black italic font-serif text-white tracking-wide">${top.scientificName}</h3>
             </div>
             <div class="flex items-center gap-2">
-              <span class="px-3 py-1 rounded-full text-xs font-semibold border ${riskColor}">${top.riskClassification.replace('_', ' ')}</span>
-              <div class="px-4 py-2 rounded-xl bg-slate-950 border border-slate-800 text-right">
-                <span class="text-[10px] text-slate-500 block uppercase">Confidence</span>
-                <span class="text-xl font-black font-mono text-emerald-400">${top.confidencePercentage}%</span>
+              <span class="px-3 py-1 rounded text-xs font-mono uppercase border ${riskColor}">${top.riskClassification.replace('_', ' ')}</span>
+              <div class="px-4 py-2 rounded bg-neutral-950 border border-neutral-800 text-right">
+                <span class="text-[10px] text-neutral-500 block font-mono uppercase">Confidence</span>
+                <span class="text-xl font-black font-mono text-white">${top.confidencePercentage}%</span>
               </div>
             </div>
           </div>
 
           <div class="pt-2">
-            <h5 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Ranked Candidate Matches</h5>
+            <h5 class="text-[11px] font-mono uppercase text-neutral-400 mb-2">Ranked Candidate Matches</h5>
             <div class="space-y-1">${rankingsHtml}</div>
           </div>
         </div>
