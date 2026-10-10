@@ -179,22 +179,40 @@ The authors acknowledge the laboratory staff and academic colleagues of the Depa
 
 ## REFERENCES
 
-1. Adetunji, V. O. and Salawu, O. T. (2008). African soft cheese (Wara) produced from Calotropis procera and Carica papaya: a comparative assessment of nutritional value and consumer acceptability. African Journal of Biotechnology, 7(18): 3352-3355.
-2. Akinyemi, M. O. and AK, A. (2021). A review of microbes and chemical contaminants in dairy products. Comprehensive Reviews in Food Science and Food Safety, 20(2): 1188-1205.
-3. Alonso, C. A., Dominguez, L. and Zarazaga, M. (2020). Occurrence of antibiotic-resistant bacteria in dairy foods. Trends in Food Science and Technology, 102: 72-81.
-4. Banwo, K. and Adeyemo, I. (2013). Technological and probiotic potential of Lactobacillus plantarum isolated from traditional fermented food products in Nigeria. Journal of Applied Microbiology, 117(3): 820-834.
-5. Boudra, H. and BJ, B. (2007). Aflatoxin M1 and ochratoxin A in raw bulk milk from French dairy herds. Journal of Dairy Science, 90(7): 3197-3201.
-6. Dror, D. K. and Allen, L. H. (2011). The importance of milk and other animal-source foods for children in low-income countries. Food and Nutrition Bulletin, 32(3): 227-243.
-7. Fawole, M. O. and Oso, B. A. (2004). Characterisation of Bacteria. In: Laboratory Manual of Microbiology. 4th ed. Spectrum Books Ltd., Ibadan, Nigeria, pp. 24-35.
-8. Gbashi, S. and Adebo, O. A. (2019). Bacterial toxins in fermented dairy products. Trends in Food Science and Technology, 84: 62-74.
-9. Giraffa, G. (2020). Bacterial safety of fermented dairy foods. Frontiers in Microbiology, 11: 707.
-10. Hamid, T. K. A. and Mustafa, E. (2021). Safety and microbiological assessment of soft cheese (Wara). Journal of Dairy Science and Biotechnology, 56(3): 89-97.
-11. Holt, J. G., Krieg, N. R., Sneath, P. H. A., Staley, J. T. and Williams, S. T. (1994). Bergey's Manual of Determinative Bacteriology. 9th ed. Williams and Wilkins, Baltimore, USA.
-12. Holzapfel, W. H., Haberer, P., Geisen, R., Bjorkroth, J. and Schillinger, U. (2020). Taxonomy and important features of probiotic microorganisms in food and nutrition. American Journal of Clinical Nutrition, 73(2): 365S-373S.
-13. MacFaddin, J. F. (2000). Biochemical Tests for Identification of Medical Bacteria. 3rd ed. Lippincott Williams and Wilkins, Philadelphia, USA.
-14. Montville, T. J. and Matthews, K. R. (2018). Food Microbiology: An Introduction. 4th ed. ASM Press, Washington, DC, USA.
-15. Oguntoyinbo, F. A. (2014). Safety considerations of lactic acid bacteria in fermented indigenous African foods. Food Reviews International, 30(2): 101-129.
-16. Osundahunsi, O. F., Aworh, O. C. and Falade, K. O. (2017). Quality assessment of traditional African soft cheese (Wara) produced using vegetable coagulants. Journal of Food Processing and Preservation, 41(4): e13054.
-17. Prescott, L. M., Harley, J. P. and Klein, D. A. (2008). Microbiology. 7th ed. McGraw-Hill, New York, USA.
-18. Quigley, L., O'Sullivan, O., Stanton, C., Beresford, T. P., Ross, R. P., Fitzgerald, G. F. and Cotter, P. D. (2013). The complex microbiota of raw milk. FEMS Microbiology Reviews, 37(5): 664-698.
-19. WHO (2017). Global Priority List of Antibiotic-Resistant Bacteria to Guide Research, Discovery, and Development of New Antibiotics. World Health Organization, Geneva, Switzerland.
+Adetunji, V. O. and Salawu, O. T. (2008). African soft cheese (Wara) produced from Calotropis procera and Carica papaya: a comparative assessment of nutritional value and consumer acceptability. African Journal of Biotechnology, 7(18): 3352-3355.
+
+Akinyemi, M. O. and AK, A. (2021). A review of microbes and chemical contaminants in dairy products. Comprehensive Reviews in Food Science and Food Safety, 20(2): 1188-1205.
+
+Alonso, C. A., Dominguez, L. and Zarazaga, M. (2020). Occurrence of antibiotic-resistant bacteria in dairy foods. Trends in Food Science and Technology, 102: 72-81.
+
+Banwo, K. and Adeyemo, I. (2013). Technological and probiotic potential of Lactobacillus plantarum isolated from traditional fermented food products in Nigeria. Journal of Applied Microbiology, 117(3): 820-834.
+
+Boudra, H. and BJ, B. (2007). Aflatoxin M1 and ochratoxin A in raw bulk milk from French dairy herds. Journal of Dairy Science, 90(7): 3197-3201.
+
+Dror, D. K. and Allen, L. H. (2011). The importance of milk and other animal-source foods for children in low-income countries. Food and Nutrition Bulletin, 32(3): 227-243.
+
+Fawole, M. O. and Oso, B. A. (2004). Characterisation of Bacteria. In: Laboratory Manual of Microbiology. 4th ed. Spectrum Books Ltd., Ibadan, Nigeria, pp. 24-35.
+
+Gbashi, S. and Adebo, O. A. (2019). Bacterial toxins in fermented dairy products. Trends in Food Science and Technology, 84: 62-74.
+
+Giraffa, G. (2020). Bacterial safety of fermented dairy foods. Frontiers in Microbiology, 11: 707.
+
+Hamid, T. K. A. and Mustafa, E. (2021). Safety and microbiological assessment of soft cheese (Wara). Journal of Dairy Science and Biotechnology, 56(3): 89-97.
+
+Holt, J. G., Krieg, N. R., Sneath, P. H. A., Staley, J. T. and Williams, S. T. (1994). Bergey's Manual of Determinative Bacteriology. 9th ed. Williams and Wilkins, Baltimore, USA.
+
+Holzapfel, W. H., Haberer, P., Geisen, R., Bjorkroth, J. and Schillinger, U. (2020). Taxonomy and important features of probiotic microorganisms in food and nutrition. American Journal of Clinical Nutrition, 73(2): 365S-373S.
+
+MacFaddin, J. F. (2000). Biochemical Tests for Identification of Medical Bacteria. 3rd ed. Lippincott Williams and Wilkins, Philadelphia, USA.
+
+Montville, T. J. and Matthews, K. R. (2018). Food Microbiology: An Introduction. 4th ed. ASM Press, Washington, DC, USA.
+
+Oguntoyinbo, F. A. (2014). Safety considerations of lactic acid bacteria in fermented indigenous African foods. Food Reviews International, 30(2): 101-129.
+
+Osundahunsi, O. F., Aworh, O. C. and Falade, K. O. (2017). Quality assessment of traditional African soft cheese (Wara) produced using vegetable coagulants. Journal of Food Processing and Preservation, 41(4): e13054.
+
+Prescott, L. M., Harley, J. P. and Klein, D. A. (2008). Microbiology. 7th ed. McGraw-Hill, New York, USA.
+
+Quigley, L., O'Sullivan, O., Stanton, C., Beresford, T. P., Ross, R. P., Fitzgerald, G. F. and Cotter, P. D. (2013). The complex microbiota of raw milk. FEMS Microbiology Reviews, 37(5): 664-698.
+
+WHO (2017). Global Priority List of Antibiotic-Resistant Bacteria to Guide Research, Discovery, and Development of New Antibiotics. World Health Organization, Geneva, Switzerland.
