@@ -4,7 +4,7 @@
 
 **Institution:** Department of Microbiology, Faculty of Science, University of Ibadan, Ibadan, Nigeria
 
-**Correspondence:** udochukwu.odoemenam@stu.ui.edu.ng
+**Correspondence:** modoemenam735@stu.ui.edu.ng
 
 **Preprint Server:** Zenodo
 
