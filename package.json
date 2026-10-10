@@ -1,0 +1,24 @@
+{
+  "name": "wara-pathogen-surveillance",
+  "version": "1.0.0",
+  "description": "Bio-surveillance and diagnostic intelligence platform modeling bacterial pathogen virulence in unpasteurized traditional dairy products (Wara cheese)",
+  "author": "Udochukwu Michael Odoemenam",
+  "license": "MIT",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "node src/server/index.js",
+    "test": "node src/engine/test-engine.js",
+    "db:verify": "node prisma/verify-seed.js"
+  },
+  "keywords": [
+    "bioinformatics",
+    "microbiology",
+    "pathogen-surveillance",
+    "food-safety",
+    "dairy",
+    "wara-cheese",
+    "public-health",
+    "computational-biology"
+  ]
+}
