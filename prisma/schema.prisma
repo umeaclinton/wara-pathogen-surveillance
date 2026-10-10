@@ -1,0 +1,168 @@
+// ==============================================================================
+// PRISMA ORM SCHEMA: BIO-SURVEILLANCE & PATHOGEN RISK REGISTRY
+// Supports: PostgreSQL (production/Supabase) and SQLite (zero-config local dev)
+// ==============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum GramStain {
+  GRAM_POSITIVE
+  GRAM_NEGATIVE
+}
+
+enum CellularShape {
+  ROD
+  COCCI
+}
+
+enum HemolysisType {
+  ALPHA
+  BETA
+  GAMMA
+}
+
+enum RiskClass {
+  BENEFICIAL_FERMENTER
+  POTENTIAL_PATHOGEN
+  OPPORTUNISTIC_PATHOGEN
+}
+
+enum ColonyMargin {
+  ENTIRE
+  UNDULATE
+  LOBATE
+  SWARMING
+}
+
+enum ColonySize {
+  SMALL
+  MEDIUM
+  LARGE
+}
+
+enum ColonyElevation {
+  FLAT
+  CONVEX
+  RAISED
+  SPREADING
+}
+
+model SurveillanceSample {
+  id              String    @id @default(uuid())
+  foodProduct     String    @default("Wara (African Soft Cheese)")
+  coagulant       String    @default("Calotropis procera leaf extract")
+  marketOrigin    String    @default("Ojoo Main Market")
+  city            String    @default("Ibadan")
+  state           String    @default("Oyo State")
+  country         String    @default("Nigeria")
+  pasteurized     Boolean   @default(false)
+  collectionDate  DateTime  @default(now())
+  createdAt       DateTime  @default(now())
+
+  isolates        Isolate[]
+
+  @@map("surveillance_samples")
+}
+
+model MicrobialTaxon {
+  id                 String     @id // e.g. "TAX-ECOLI", "TAX-SAUREUS"
+  scientificName     String     @unique
+  genus              String
+  species            String
+  microbialGroup     String     // e.g. "Enterobacteriaceae", "Lactic Acid Bacteria (LAB)"
+  riskClassification RiskClass
+  healthImplications String?
+  createdAt          DateTime   @default(now())
+
+  isolates           Isolate[]
+
+  @@map("microbial_taxa")
+}
+
+model Isolate {
+  isolateCode       String             @id // "OW01" through "OW40"
+  sampleId          String
+  taxonId           String
+  gramStain         GramStain
+  cellularShape     CellularShape
+  isolationMedia    String             @default("Nutrient Agar / EMB / MRS Agar")
+  createdAt         DateTime           @default(now())
+
+  sample            SurveillanceSample @relation(fields: [sampleId], references: [id])
+  taxon             MicrobialTaxon     @relation(fields: [taxonId], references: [id])
+  morphology        IsolateMorphology?
+  biochemical       IsolateBiochemical?
+  fermentation      IsolateFermentation?
+  virulence         IsolateVirulence?
+
+  @@index([taxonId])
+  @@index([sampleId])
+  @@map("isolates")
+}
+
+model IsolateMorphology {
+  isolateCode           String          @id
+  colonyMargin          ColonyMargin
+  colonySize            ColonySize
+  colonyElevation       ColonyElevation
+  surfaceTexture        String          // "Glossy", "Dull", "Rough"
+  pigmentation          String          // "White", "Golden/yellow", "Green Sheen"
+  greenMetallicSheenEMB Boolean         @default(false)
+  swarmingMotility      Boolean         @default(false)
+
+  isolate               Isolate         @relation(fields: [isolateCode], references: [isolateCode], onDelete: Cascade)
+
+  @@map("isolate_morphologies")
+}
+
+model IsolateBiochemical {
+  isolateCode        String   @id
+  oxidase            Boolean
+  catalase           Boolean
+  citrateUtilization Boolean
+  indoleProduction   Boolean
+  methylRed          Boolean
+  vogesProskauer     Boolean
+
+  isolate            Isolate  @relation(fields: [isolateCode], references: [isolateCode], onDelete: Cascade)
+
+  @@map("isolate_biochemical_profiles")
+}
+
+model IsolateFermentation {
+  isolateCode         String   @id
+  glucose             Boolean
+  maltose             Boolean
+  sucrose             Boolean
+  lactose             Boolean
+  fructose            Boolean
+  galactose           Boolean
+  mannitol            Boolean
+  sorbitol            Boolean
+  fermentationSummary String?
+
+  isolate             Isolate  @relation(fields: [isolateCode], references: [isolateCode], onDelete: Cascade)
+
+  @@map("isolate_sugar_fermentations")
+}
+
+model IsolateVirulence {
+  isolateCode         String        @id
+  gelatinase          Boolean
+  dnase               Boolean
+  hemolysis           HemolysisType
+  virulenceScore      Int           @default(0) // 0-100 calculated metric
+
+  isolate             Isolate       @relation(fields: [isolateCode], references: [isolateCode], onDelete: Cascade)
+
+  @@index([virulenceScore])
+  @@index([hemolysis])
+  @@map("isolate_virulence_factors")
+}
