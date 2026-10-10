@@ -1,6 +1,6 @@
 # Phenotypic Characterisation and Virulence Profiling of Bacterial Contaminants in Traditional Unpasteurized Soft Cheese (Wara) Sold in Urban Nigerian Markets: A Bio-Surveillance Framework
 
-Udochukwu Michael Odoemenam, K. Banwo
+Udochukwu Michael Odoemenam
 
 Department of Microbiology, Faculty of Science, University of Ibadan, Ibadan, Nigeria
 
@@ -167,7 +167,7 @@ The repository is distributed under the MIT Open Source License. The primary lab
 
 ## CONFLICT OF INTEREST
 
-The authors declare that there are no financial or commercial conflicts of interest associated with this research.
+The author declares that there are no financial or commercial conflicts of interest associated with this research.
 
 ## FUNDING STATEMENT
 
@@ -175,7 +175,7 @@ This study was conducted in the Department of Microbiology, Faculty of Science, 
 
 ## ACKNOWLEDGEMENTS
 
-The authors acknowledge the laboratory staff and academic colleagues of the Department of Microbiology, University of Ibadan, for technical and institutional guidance throughout the original experimental research.
+The author gratefully acknowledges his undergraduate project supervisor, Dr. K. Banwo (Department of Microbiology, Faculty of Science, University of Ibadan), for academic guidance, supervision, and laboratory facilitation during the initial experimental work. The author also thanks the laboratory staff of the Department of Microbiology for technical support. Computational platform development, data architecture, algorithm formulation, and manuscript authorship were conducted independently by the author.
 
 ## REFERENCES
 
