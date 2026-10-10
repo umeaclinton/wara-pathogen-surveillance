@@ -1,8 +1,8 @@
 /**
  * ==============================================================================
  * BIO-SURVEILLANCE HTTP WEB SERVER & API GATEWAY
- * Author: Michael (CTO & Lead Engineer)
- * Zero-dependency native Node.js HTTP server (Serves UI + REST API)
+ * Author: Michael (Lead Software Engineer & Microbiologist)
+ * Native Node.js HTTP server
  * ==============================================================================
  */
 
@@ -48,7 +48,6 @@ const server = http.createServer((req, res) => {
   const pathname = parsedUrl.pathname;
   const method = req.method;
 
-  // Handle CORS preflight
   if (method === 'OPTIONS') {
     res.writeHead(204, {
       'Access-Control-Allow-Origin': '*',
@@ -59,7 +58,6 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // --- REST API ENDPOINTS ---
   if (pathname === '/api/surveillance/summary' && method === 'GET') {
     const summary = getSurveillanceSummaryHandler();
     sendJson(res, 200, summary);
@@ -90,32 +88,23 @@ const server = http.createServer((req, res) => {
         const diagnosis = diagnoseHandler(payload);
         sendJson(res, diagnosis.statusCode || 200, diagnosis);
       } catch (err) {
-        sendJson(res, 400, { error: 'Invalid JSON body' });
+        sendJson(res, 400, { error: 'Invalid JSON payload' });
       }
     });
     return;
   }
 
-  // --- STATIC FRONTEND DELIVERY ---
   if (pathname === '/' || pathname === '/index.html') {
     sendFile(res, path.join(PUBLIC_DIR, 'index.html'), 'text/html');
     return;
   }
 
-  // Fallback 404
   res.writeHead(404, { 'Content-Type': 'text/plain' });
   res.end('404 Not Found');
 });
 
 server.listen(PORT, () => {
-  console.log(`\n======================================================`);
-  console.log(`🔬 WaraBio-Surveillance Platform Live at:`);
-  console.log(`🌐 http://localhost:${PORT}`);
-  console.log(`📡 Endpoints:`);
-  console.log(`   • GET  http://localhost:${PORT}/api/surveillance/summary`);
-  console.log(`   • GET  http://localhost:${PORT}/api/isolates`);
-  console.log(`   • POST http://localhost:${PORT}/api/diagnose`);
-  console.log(`======================================================\n`);
+  console.log(`Server listening on http://localhost:${PORT}`);
 });
 
 module.exports = server;
