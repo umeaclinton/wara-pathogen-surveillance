@@ -1,0 +1,1676 @@
+{
+  "sample": {
+    "id": "SAMPLE-OJOO-01",
+    "foodProduct": "Wara (African Soft Cheese)",
+    "coagulant": "Calotropis procera (Sodom apple) leaf extract",
+    "marketOrigin": "Ojoo Main Market",
+    "city": "Ibadan",
+    "state": "Oyo State",
+    "country": "Nigeria",
+    "pasteurized": false,
+    "collectionDate": "2024-10-15T08:00:00Z"
+  },
+  "taxa": [
+    {
+      "id": "TAX-L-PLANTARUM",
+      "scientificName": "Lactobacillus plantarum",
+      "genus": "Lactobacillus",
+      "species": "plantarum",
+      "microbialGroup": "Lactic Acid Bacteria (LAB)",
+      "riskClassification": "BENEFICIAL_FERMENTER",
+      "healthImplications": "Beneficial probiotic and acid producer; essential for traditional preservation."
+    },
+    {
+      "id": "TAX-L-FERMENTUM",
+      "scientificName": "Lactobacillus fermentum",
+      "genus": "Lactobacillus",
+      "species": "fermentum",
+      "microbialGroup": "Lactic Acid Bacteria (LAB)",
+      "riskClassification": "BENEFICIAL_FERMENTER",
+      "healthImplications": "Heterofermentative lactic acid bacterium contributing to cheese aroma and acidification."
+    },
+    {
+      "id": "TAX-E-FAECALIS",
+      "scientificName": "Enterococcus faecalis",
+      "genus": "Enterococcus",
+      "species": "faecalis",
+      "microbialGroup": "Lactic Acid Bacteria (LAB)",
+      "riskClassification": "OPPORTUNISTIC_PATHOGEN",
+      "healthImplications": "Commensal LAB; can act as opportunistic nosocomial pathogen with intrinsic antibiotic resistance."
+    },
+    {
+      "id": "TAX-S-THERMOPHILUS",
+      "scientificName": "Streptococcus thermophilus",
+      "genus": "Streptococcus",
+      "species": "thermophilus",
+      "microbialGroup": "Lactic Acid Bacteria (LAB)",
+      "riskClassification": "BENEFICIAL_FERMENTER",
+      "healthImplications": "Widely utilized dairy starter culture; safe for human consumption."
+    },
+    {
+      "id": "TAX-B-SUBTILIS",
+      "scientificName": "Bacillus subtilis",
+      "genus": "Bacillus",
+      "species": "subtilis",
+      "microbialGroup": "Endospore-Forming Bacilli",
+      "riskClassification": "BENEFICIAL_FERMENTER",
+      "healthImplications": "Proteolytic endospore-former; utilized in traditional alkaline fermentations; food spoilage organism."
+    },
+    {
+      "id": "TAX-B-CEREUS",
+      "scientificName": "Bacillus cereus",
+      "genus": "Bacillus",
+      "species": "cereus",
+      "microbialGroup": "Endospore-Forming Bacilli",
+      "riskClassification": "POTENTIAL_PATHOGEN",
+      "healthImplications": "Emetic and diarrheal food poisoning pathogen; heat-resistant endospore former."
+    },
+    {
+      "id": "TAX-P-AERUGINOSA",
+      "scientificName": "Pseudomonas aeruginosa",
+      "genus": "Pseudomonas",
+      "species": "aeruginosa",
+      "microbialGroup": "Non-Fermenting Gram-Negative Bacteria",
+      "riskClassification": "OPPORTUNISTIC_PATHOGEN",
+      "healthImplications": "Environmental biofilm producer and opportunistic pathogen; indicative of contaminated water sources."
+    },
+    {
+      "id": "TAX-E-COLI",
+      "scientificName": "Escherichia coli",
+      "genus": "Escherichia",
+      "species": "coli",
+      "microbialGroup": "Enterobacteriaceae",
+      "riskClassification": "POTENTIAL_PATHOGEN",
+      "healthImplications": "Direct indicator of fecal contamination; potential cause of acute gastroenteritis and diarrhea."
+    },
+    {
+      "id": "TAX-SALMONELLA-SPP",
+      "scientificName": "Salmonella spp.",
+      "genus": "Salmonella",
+      "species": "spp.",
+      "microbialGroup": "Enterobacteriaceae",
+      "riskClassification": "POTENTIAL_PATHOGEN",
+      "healthImplications": "Primary enteric pathogen causing salmonellosis, enteric fever, and gastrointestinal inflammation."
+    },
+    {
+      "id": "TAX-S-AUREUS",
+      "scientificName": "Staphylococcus aureus",
+      "genus": "Staphylococcus",
+      "species": "aureus",
+      "microbialGroup": "Staphylococci",
+      "riskClassification": "POTENTIAL_PATHOGEN",
+      "healthImplications": "Produces heat-stable staphylococcal enterotoxins leading to acute food intoxication; handler contamination indicator."
+    },
+    {
+      "id": "TAX-P-MIRABILIS",
+      "scientificName": "Proteus mirabilis",
+      "genus": "Proteus",
+      "species": "mirabilis",
+      "microbialGroup": "Enterobacteriaceae",
+      "riskClassification": "OPPORTUNISTIC_PATHOGEN",
+      "healthImplications": "Swarming motility enteric organism; associated with urinary tract infections and opportunistic contamination."
+    }
+  ],
+  "isolates": [
+    {
+      "isolateCode": "OW01",
+      "taxonId": "TAX-L-PLANTARUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "FLAT",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White/Grayish",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 50
+      }
+    },
+    {
+      "isolateCode": "OW02",
+      "taxonId": "TAX-L-FERMENTUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Cream/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "ALPHA",
+        "virulenceScore": 20
+      }
+    },
+    {
+      "isolateCode": "OW03",
+      "taxonId": "TAX-E-FAECALIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW04",
+      "taxonId": "TAX-S-THERMOPHILUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "ALPHA",
+        "virulenceScore": 20
+      }
+    },
+    {
+      "isolateCode": "OW05",
+      "taxonId": "TAX-B-SUBTILIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "UNDULATE",
+        "colonySize": "LARGE",
+        "colonyElevation": "SPREADING",
+        "surfaceTexture": "Dull",
+        "pigmentation": "Off-white",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW06",
+      "taxonId": "TAX-B-CEREUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "LOBATE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Rough",
+        "pigmentation": "Gray/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW07",
+      "taxonId": "TAX-P-AERUGINOSA",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "UNDULATE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "FLAT",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Green",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": false,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": false,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW08",
+      "taxonId": "TAX-E-COLI",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Green Sheen",
+        "greenMetallicSheenEMB": true,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": false,
+        "indoleProduction": true,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW09",
+      "taxonId": "TAX-SALMONELLA-SPP",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Colorless",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 25
+      }
+    },
+    {
+      "isolateCode": "OW10",
+      "taxonId": "TAX-S-AUREUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Golden/yellow",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": true
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": true,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW11",
+      "taxonId": "TAX-B-SUBTILIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Greyish",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 75
+      }
+    },
+    {
+      "isolateCode": "OW12",
+      "taxonId": "TAX-P-MIRABILIS",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Greyish",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 75
+      }
+    },
+    {
+      "isolateCode": "OW13",
+      "taxonId": "TAX-L-PLANTARUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Yellow",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": false,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": true,
+        "galactose": true,
+        "mannitol": true,
+        "sorbitol": true
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW14",
+      "taxonId": "TAX-L-FERMENTUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Cream/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW15",
+      "taxonId": "TAX-E-FAECALIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "SWARMING",
+        "colonySize": "LARGE",
+        "colonyElevation": "SPREADING",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Grey",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": true
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": true,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 75
+      }
+    },
+    {
+      "isolateCode": "OW16",
+      "taxonId": "TAX-S-THERMOPHILUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "FLAT",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White/Grayish",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 50
+      }
+    },
+    {
+      "isolateCode": "OW17",
+      "taxonId": "TAX-B-SUBTILIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Cream/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "ALPHA",
+        "virulenceScore": 20
+      }
+    },
+    {
+      "isolateCode": "OW18",
+      "taxonId": "TAX-B-CEREUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW19",
+      "taxonId": "TAX-P-AERUGINOSA",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "ALPHA",
+        "virulenceScore": 20
+      }
+    },
+    {
+      "isolateCode": "OW20",
+      "taxonId": "TAX-E-COLI",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "UNDULATE",
+        "colonySize": "LARGE",
+        "colonyElevation": "SPREADING",
+        "surfaceTexture": "Dull",
+        "pigmentation": "Off-white",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW21",
+      "taxonId": "TAX-SALMONELLA-SPP",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "LOBATE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Rough",
+        "pigmentation": "Gray/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW22",
+      "taxonId": "TAX-S-AUREUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "UNDULATE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "FLAT",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Green",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": false,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": false,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW23",
+      "taxonId": "TAX-P-MIRABILIS",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Green sheen",
+        "greenMetallicSheenEMB": true,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": false,
+        "indoleProduction": true,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW24",
+      "taxonId": "TAX-L-PLANTARUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Colorless",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 25
+      }
+    },
+    {
+      "isolateCode": "OW25",
+      "taxonId": "TAX-L-FERMENTUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Golden/yellow",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": true
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": true,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW26",
+      "taxonId": "TAX-E-FAECALIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Greyish",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 75
+      }
+    },
+    {
+      "isolateCode": "OW27",
+      "taxonId": "TAX-S-THERMOPHILUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Greyish",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 75
+      }
+    },
+    {
+      "isolateCode": "OW28",
+      "taxonId": "TAX-B-SUBTILIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Yellow",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": false,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": true,
+        "galactose": true,
+        "mannitol": true,
+        "sorbitol": true
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW29",
+      "taxonId": "TAX-B-CEREUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Cream/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW30",
+      "taxonId": "TAX-P-AERUGINOSA",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "SWARMING",
+        "colonySize": "LARGE",
+        "colonyElevation": "SPREADING",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Grey",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": true
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": true,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 75
+      }
+    },
+    {
+      "isolateCode": "OW31",
+      "taxonId": "TAX-E-COLI",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "FLAT",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White/Grayish",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "BETA",
+        "virulenceScore": 50
+      }
+    },
+    {
+      "isolateCode": "OW32",
+      "taxonId": "TAX-SALMONELLA-SPP",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Cream/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "ALPHA",
+        "virulenceScore": 20
+      }
+    },
+    {
+      "isolateCode": "OW33",
+      "taxonId": "TAX-S-AUREUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW34",
+      "taxonId": "TAX-L-PLANTARUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "SMALL",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": false,
+        "citrateUtilization": false,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "ALPHA",
+        "virulenceScore": 20
+      }
+    },
+    {
+      "isolateCode": "OW35",
+      "taxonId": "TAX-L-FERMENTUM",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "UNDULATE",
+        "colonySize": "LARGE",
+        "colonyElevation": "SPREADING",
+        "surfaceTexture": "Dull",
+        "pigmentation": "Off-white",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW36",
+      "taxonId": "TAX-E-FAECALIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "LOBATE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Rough",
+        "pigmentation": "Gray/White",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW37",
+      "taxonId": "TAX-S-THERMOPHILUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "COCCI",
+      "morphology": {
+        "colonyMargin": "UNDULATE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "FLAT",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Green",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": true,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": false,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": false,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    },
+    {
+      "isolateCode": "OW38",
+      "taxonId": "TAX-B-SUBTILIS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Green Sheen",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": false,
+        "indoleProduction": true,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": true,
+        "sucrose": true,
+        "lactose": true,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": false,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 0
+      }
+    },
+    {
+      "isolateCode": "OW39",
+      "taxonId": "TAX-B-CEREUS",
+      "gramStain": "GRAM_POSITIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "RAISED",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Colorless",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": false
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": false,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": false,
+        "hemolysis": "GAMMA",
+        "virulenceScore": 25
+      }
+    },
+    {
+      "isolateCode": "OW40",
+      "taxonId": "TAX-P-AERUGINOSA",
+      "gramStain": "GRAM_NEGATIVE",
+      "cellularShape": "ROD",
+      "morphology": {
+        "colonyMargin": "ENTIRE",
+        "colonySize": "MEDIUM",
+        "colonyElevation": "CONVEX",
+        "surfaceTexture": "Glossy",
+        "pigmentation": "Golden/yellow",
+        "greenMetallicSheenEMB": false,
+        "swarmingMotility": false
+      },
+      "biochemical": {
+        "oxidase": false,
+        "catalase": true,
+        "citrateUtilization": true,
+        "indoleProduction": false,
+        "methylRed": true,
+        "vogesProskauer": true
+      },
+      "fermentation": {
+        "glucose": true,
+        "maltose": false,
+        "sucrose": false,
+        "lactose": false,
+        "fructose": false,
+        "galactose": false,
+        "mannitol": true,
+        "sorbitol": false
+      },
+      "virulence": {
+        "gelatinase": true,
+        "dnase": true,
+        "hemolysis": "BETA",
+        "virulenceScore": 100
+      }
+    }
+  ]
+}
